@@ -15,3 +15,10 @@ automation for case study, upload file for geo comply
 - no whitelisted acceptable upload file
 - executable file is allowed
 - no size limit validation
+
+## geo comply website bugs
+- when user lost a password, click on get new password. page not found
+![alt text for screen readers](screenshots/lost-and-get-new-pwd.png "page not found").
+
+- when scroll down, the menu is not disappearing on top.
+![alt text for screen readers](screenshots/menu-gone-when-scrolling-down.png "page not found").
