@@ -7,6 +7,8 @@ const { UploadFilePage } = require('../pages/uploadFile.pom');
 
 const p = new UploadFilePage(page);
 Given('I upload a file', async function () {
+  
+  await p.navigateTo('');
   await p.uploadFile();
   // await uploadPage.assert.toShowUploadSuccessful();
   console.log('step I upload a file');

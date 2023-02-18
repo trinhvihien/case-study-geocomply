@@ -417,11 +417,6 @@
   dependencies:
     "@types/node" "*"
 
-"@types/lodash@4.14.167":
-  version "4.14.167"
-  resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.167.tgz#ce7d78553e3c886d4ea643c37ec7edc20f16765e"
-  integrity sha512-w7tQPjARrvdeBkX/Rwg95S592JwxqOjmms3zWQ0XZgSyxSLdzWaYH3vErBhdVS/lRBX7F8aBYcYJYTr5TMGOzw==
-
 "@types/lodash@^4.14.175":
   version "4.14.191"
   resolved "https://registry.yarnpkg.com/@types/lodash/-/lodash-4.14.191.tgz#09511e7f7cba275acd8b419ddac8da9a6a79e2fa"
@@ -833,14 +828,7 @@ cross-spawn@^7.0.2:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-cucumber-console-formatter@1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/cucumber-console-formatter/-/cucumber-console-formatter-1.0.0.tgz#a3a9a272f6713142cd6450e53dc50193ac1b4c3d"
-  integrity sha512-2DtwlLDE+URsh6/optsjH4/JLF01p9pkBMxBhH702neUrtU/FXm9FEyBYqhg5355MIq2FgEdRB3AcoVfBxO8hw==
-  dependencies:
-    "@types/lodash" "4.14.167"
-
-cucumber-html-reporter@5.5.0:
+cucumber-html-reporter@^5.5.0:
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/cucumber-html-reporter/-/cucumber-html-reporter-5.5.0.tgz#62603bf576d46250127bbe81bb487b8e7dc0ce96"
   integrity sha512-kF7vIwvTe7we7Wp/5uNZVZk+Ryozb688LpNvCNhou6N0RmLYPqaoV2aiN8GIB94JUBpribtlq6kDkEUHwxBVeQ==

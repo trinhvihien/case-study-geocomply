@@ -1,0 +1,87 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "upload-file-tests;upload-a-valid-file",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "upload a valid file",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 13216301249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I have a file to upload",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I upload a file",
+            "match": {
+              "location": "stepDefinitions/sample.steps.ts:8"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "message should show",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 112549583
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@foo",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "upload-file-tests",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Upload file tests",
+    "tags": [
+      {
+        "name": "@foo",
+        "line": 1
+      }
+    ],
+    "uri": "features/sample.feature"
+  }
+]

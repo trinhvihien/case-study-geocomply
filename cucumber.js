@@ -3,6 +3,7 @@ let options = [
   '--require stepDefinitions/*.ts',
   '--require hooks/commonHooks.ts',
   '--require pages/*.ts',
+  '-f json:reports/cucumber_report.json',
   '--publish-quiet',
 ].join(' ');
 
