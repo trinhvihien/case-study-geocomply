@@ -4,9 +4,7 @@
   "description": "automation for case study, upload file for geo comply",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write \"**/*.{ts}\" ",
-    "only": "npm run cucumber -- --tags @only",
-    "report1223": "open reports/report.html",
+    "format": "prettier --write \"**/*.ts\" ",
     "test": "cucumber-js -p test_runner --tags @regression",
     "report": "node reporter.js"
   },

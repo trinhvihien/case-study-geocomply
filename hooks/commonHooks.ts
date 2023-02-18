@@ -6,18 +6,18 @@ let browser: Browser;
 setDefaultTimeout(60000);
 
 Before(async () => {
-  try {
-    browser = await chromium.launch({ headless: false });
-    const context = await browser.newContext();
-    page = await context.newPage();
-    await page.goto('https://demo.guru99.com/test/upload/');
-  } catch (error) {
-    throw new Error('cannot load download page');
-  }
+    try {
+        browser = await chromium.launch({ headless: false });
+        const context = await browser.newContext();
+        page = await context.newPage();
+        await page.goto('https://demo.guru99.com/test/upload/');
+    } catch (error) {
+        throw new Error('cannot load download page');
+    }
 });
 
 After(async () => {
-  await browser.close();
+    await browser.close();
 });
 
 export { page, browser };
