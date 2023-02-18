@@ -1,6 +1,8 @@
 let options = [
   '--require-module ts-node/register',
-  '--require ./stepDefinitions/*.ts',
+  '--require stepDefinitions/*.ts',
+  '--require hooks/commonHooks.ts',
+  '--require pages/*.ts',
   '--publish-quiet',
 ].join(' ');
 

@@ -1,16 +1,23 @@
-import { Before, BeforeAll, AfterAll } from '@cucumber/cucumber';
+import { After, Before, setDefaultTimeout } from '@cucumber/cucumber';
+import { Browser, chromium, Page } from '@playwright/test';
 
-Before({ tags: '@ignore' }, async function () {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  return 'skipped' as any;
+let page: Page;
+let browser: Browser;
+setDefaultTimeout(60000);
+
+Before(async () => {
+  try {
+    browser = await chromium.launch({ headless: false });
+    const context = await browser.newContext();
+    page = await context.newPage();
+    await page.goto('https://demo.guru99.com/test/upload/');
+  } catch (error) {
+    throw new Error('cannot load download page');
+  }
 });
 
-BeforeAll(async function () {
-  // eslint-disable-next-line no-console
-  console.log('Before All');
+After(async () => {
+  await browser.close();
 });
 
-AfterAll(async function () {
-  // eslint-disable-next-line no-console
-  console.log('After All');
-});
+export { page, browser };

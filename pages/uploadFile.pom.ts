@@ -10,6 +10,7 @@ export class UploadFilePage extends BasePage {
   }
 
   async uploadFile() {
+     console.log('calling uploadFile');
     this.assert.toShowUploadSuccessful();
   }
 }
@@ -18,6 +19,7 @@ class UploadFilePageAssertions {
   constructor(readonly uploadFilePage: UploadFilePage) {}
 
   async toShowUploadSuccessful() {
+    console.log('calling toShowUploadSuccessful');
     expect(this.uploadFilePage.page.getByLabel(''), 'msg');
   }
 }
