@@ -1,0 +1,21 @@
+{
+  "name": "case-study-geocomply",
+  "version": "1.0.0",
+  "description": "automation for case study, upload file for geo comply",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trinhvihien/case-study-geocomply.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trinhvihien/case-study-geocomply/issues"
+  },
+  "homepage": "https://github.com/trinhvihien/case-study-geocomply#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.30.0"
+  }
+}
