@@ -13,8 +13,9 @@
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 13216301249
+              "status": "failed",
+              "duration": 969917,
+              "error_message": "Error: cannot load download page\n    at World.<anonymous> (/Users/hientrinh/Documents/GitHub/case-study-geocomply/hooks/commonHooks.ts:18:15)"
             }
           },
           {
@@ -23,7 +24,7 @@
             "line": 5,
             "name": "I have a file to upload",
             "result": {
-              "status": "undefined",
+              "status": "ambiguous",
               "duration": 0
             }
           },
@@ -33,7 +34,7 @@
             "line": 9,
             "name": "I upload a file",
             "match": {
-              "location": "stepDefinitions/sample.steps.ts:8"
+              "location": "features/stepDefinitions/sample.steps.ts:8"
             },
             "result": {
               "status": "skipped",
@@ -54,8 +55,9 @@
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "passed",
-              "duration": 112549583
+              "status": "failed",
+              "duration": 149874,
+              "error_message": "TypeError: Cannot read property 'close' of undefined\n    at World.<anonymous> (/Users/hientrinh/Documents/GitHub/case-study-geocomply/hooks/commonHooks.ts:22:19)"
             }
           }
         ],
