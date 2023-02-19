@@ -19,4 +19,4 @@
 - a cucumber config file, to setup features, steps directories. What kinds of report to use with cucumberJs 
 
 ### tests/uploadFile.spec.ts
-- demo for playwright sample test. Not using for the project. Traditional style for writing test (non BDD style)
+- demo for using pure playwright for writing test. Traditional style for writing test (non BDD style)
