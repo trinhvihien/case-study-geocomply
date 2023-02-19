@@ -6,7 +6,8 @@
   "scripts": {
     "format": "prettier --write \"**/*.ts\" ",
     "test": "cucumber-js -p test_runner --tags @regression",
-    "report": "node reporter.js"
+    "report": "node reporter.js",
+    "pw": "playwright test"
   },
   "repository": {
     "type": "git",
@@ -24,16 +25,14 @@
     "@playwright/test": "^1.30.0",
     "@types/fs-extra": "11.0.1",
     "cucumber-html-reporter": "^5.5.0",
-    "fs-extra": "11.1.0",
     "ts-node": "10.9.1",
-    "typescript": "4.9.5"
+    "typescript": "4.9.5",
+    "upath": "^2.0.1"
   },
   "devDependencies": {
     "@types/expect": "24.3.0",
-    "@types/fs-extra": "11.0.1",
     "@typescript-eslint/eslint-plugin": "5.51.0",
     "@typescript-eslint/parser": "5.51.0",
-    "allure-cucumberjs": "2.0.0-beta.25",
     "eslint": "8.34.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-import": "2.27.5",

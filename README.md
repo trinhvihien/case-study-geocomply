@@ -9,7 +9,7 @@ automation for case study, upload file for geo comply
 - open terminal and run command: npm install
 
 
-## Bugs
+## File upload Bugs
 - file is not uploaded, the page is calling a delay to fake the upload progress
 - allow user uploads without accept terms
 - no whitelisted acceptable upload file
