@@ -4,8 +4,9 @@
 - Report HTML is generated after tests
 - Prettier for formating code
 - Page Object are using for easy maintainance code.
-- 
-## Prequistie
+- [Structure](project.structure.md)
+- [Bugs](#file-upload-bugs)
+## Prerequisite
 - install Node js v19
 - install VS code
 ## Installation
