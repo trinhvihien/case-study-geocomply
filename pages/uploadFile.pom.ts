@@ -2,6 +2,7 @@ import { expect, Locator, Page } from '@playwright/test';
 import { BasePage } from './base.pom';
 import { normalize, join } from 'upath';
 import os from 'os';
+import fs from 'fs';
 
 export class UploadFilePage extends BasePage {
     readonly assert: UploadFilePageAssertions;
@@ -26,20 +27,19 @@ export class UploadFilePage extends BasePage {
             return filePath;
         }
 
-        return  `./data\/${fileName}`;
+        return `./data\/${fileName}`;
     }
 
     async uploadFile(fileName: string) {
-        const filePath = await this.factoryFilePath('campfire.jpg');
-        console.log(`path: ${filePath}`);
+        const filePath = await this.factoryFilePath(fileName);
+        if (!fs.existsSync(filePath)) {
+            throw new Error('file upload does not exist');
+        }
         await this.fileChooser.click();
         await this.fileChooser.setInputFiles(filePath);
-        //         await this.fileChooser.setInputFiles([filePath, 'data/web.html']);
+        // await this.fileChooser.setInputFiles([filePath, 'data/web.html']);
         await this.acceptTermsCheckbox.check();
         await this.submitFileButton.click();
-        await this.assert.toDisplayUploadSuccessfully();
-         
-    await this.page.close();
     }
 }
 
