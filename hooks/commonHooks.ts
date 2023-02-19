@@ -10,7 +10,7 @@ Before(async () => {
         browser = await chromium.launch({ headless: false });
         const context = await browser.newContext();
         page = await context.newPage();
-        await page.goto('https://demo.guru99.com/test/upload/');
+        // await page.goto('https://demo.guru99.com/test/upload/');
     } catch (error) {
         throw new Error('cannot load download page');
     }

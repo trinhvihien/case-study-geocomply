@@ -1,63 +1,67 @@
 [
   {
-    "description": "",
+    "description": "  I want to upload file(s)",
     "elements": [
       {
         "description": "",
-        "id": "upload-file-tests;upload-a-valid-file",
+        "id": "upload-file-tests;upload-a-single-valid-file-and-accept-terms",
         "keyword": "Scenario",
-        "line": 8,
-        "name": "upload a valid file",
+        "line": 9,
+        "name": "upload a single valid file and accept terms",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 969917,
-              "error_message": "Error: cannot load download page\n    at World.<anonymous> (/Users/hientrinh/Documents/GitHub/case-study-geocomply/hooks/commonHooks.ts:18:15)"
+              "status": "passed",
+              "duration": 755024667
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
-            "name": "I have a file to upload",
+            "line": 6,
+            "name": "I go to upload file page",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:6"
+            },
             "result": {
-              "status": "ambiguous",
-              "duration": 0
+              "status": "passed",
+              "duration": 6763332999
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 9,
-            "name": "I upload a file",
+            "line": 10,
+            "name": "I upload a file successfully",
             "match": {
-              "location": "features/stepDefinitions/sample.steps.ts:8"
+              "location": "features/stepDefinitions/fileUpload.steps.ts:10"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 114166
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 10,
-            "name": "message should show",
+            "line": 11,
+            "name": "The message should display",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:13"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 58624
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "result": {
-              "status": "failed",
-              "duration": 149874,
-              "error_message": "TypeError: Cannot read property 'close' of undefined\n    at World.<anonymous> (/Users/hientrinh/Documents/GitHub/case-study-geocomply/hooks/commonHooks.ts:22:19)"
+              "status": "passed",
+              "duration": 75120665
             }
           }
         ],
@@ -68,7 +72,7 @@
           },
           {
             "name": "@regression",
-            "line": 7
+            "line": 8
           }
         ],
         "type": "scenario"
@@ -84,6 +88,6 @@
         "line": 1
       }
     ],
-    "uri": "features/sample.feature"
+    "uri": "features/fileUpload.feature"
   }
 ]

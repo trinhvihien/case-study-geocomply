@@ -1,15 +1,18 @@
-const { setWorldConstructor } = require('@cucumber/cucumber');
-const playwright = require('playwright');
+import { setWorldConstructor } from '@cucumber/cucumber';
+import { Browser, chromium, Page } from '@playwright/test';
+
+let page: Page;
+let browser: Browser;
+ 
 
 class CustomWorld {
     async openUrl(url) {
-        const browser = await playwright.chromium.launch({
-            headless: false,
-        });
-        const context = await browser.newContext();
-        const page = await context.newPage();
+         browser = await chromium.launch({ headless: false });
+         const context = await browser.newContext();
+         page = await context.newPage();
+       
         await page.goto(url);
     }
 }
 
-setWorldConstructor(CustomWorld);
+ setWorldConstructor(CustomWorld);
