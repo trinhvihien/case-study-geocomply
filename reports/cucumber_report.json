@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "upload-file-tests;upload-a-single-valid-file-and-accept-terms",
+        "id": "upload-file-tests;users-upload-a-single-valid-file",
         "keyword": "Scenario",
         "line": 9,
-        "name": "upload a single valid file and accept terms",
+        "name": "users upload a single valid file",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1056114084
+              "duration": 890713332
             }
           },
           {
@@ -27,33 +27,59 @@
             },
             "result": {
               "status": "passed",
-              "duration": 6078083750
+              "duration": 6142085292
             }
           },
           {
             "arguments": [],
-            "keyword": "When ",
+            "keyword": "Given ",
             "line": 10,
-            "name": "I upload a file successfully",
+            "name": "I choose a file 'campfire.jpg'",
             "match": {
               "location": "features/stepDefinitions/fileUpload.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 1009270666
+              "duration": 958136040
             }
           },
           {
             "arguments": [],
-            "keyword": "Then ",
+            "keyword": "And ",
             "line": 11,
-            "name": "The message should display",
+            "name": "Accept terms of service",
             "match": {
               "location": "features/stepDefinitions/fileUpload.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 4642624
+              "duration": 91358958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "I submit a file",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 257672541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "The message should display",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6316915
             }
           },
           {
@@ -61,7 +87,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 95918250
+              "duration": 140667834
             }
           }
         ],
@@ -73,6 +99,273 @@
           {
             "name": "@regression",
             "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "upload-file-tests;without-accepting-terms,-user-upload-a-file",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "without accepting terms, user upload a file",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 770638209
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I go to upload file page",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5393284041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I choose a file 'campfire.jpg'",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 997961915
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "Do not accept terms of service",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4742833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I could not submit a file",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 4389042,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n    at Proxy.<anonymous> (/Users/hientrinh/Documents/GitHub/case-study-geocomply/node_modules/@playwright/test/lib/expect.js:129:37)\n    at UploadFilePageAssertions.toDisabledSubmitFileButton (/Users/hientrinh/Documents/GitHub/case-study-geocomply/pages/uploadFile.pom.ts:66:39)\n    at World.<anonymous> (/Users/hientrinh/Documents/GitHub/case-study-geocomply/features/stepDefinitions/fileUpload.steps.ts:24:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 80246791
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@foo",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "upload-file-tests;users-upload-an-executable-file",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "users upload an executable file",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 704439916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I go to upload file page",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7923757166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I choose an executable file 'executable.bat'",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 971226375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Accept terms of service",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41493333
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I could not submit an executable file",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2664874,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n    at Proxy.<anonymous> (/Users/hientrinh/Documents/GitHub/case-study-geocomply/node_modules/@playwright/test/lib/expect.js:129:37)\n    at UploadFilePageAssertions.toDisabledSubmitFileButton (/Users/hientrinh/Documents/GitHub/case-study-geocomply/pages/uploadFile.pom.ts:66:39)\n    at World.<anonymous> (/Users/hientrinh/Documents/GitHub/case-study-geocomply/features/stepDefinitions/fileUpload.steps.ts:24:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 101969959
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@foo",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 21
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "upload-file-tests;users-upload-an-executable-file",
+        "keyword": "Scenario Outline",
+        "line": 22,
+        "name": "users upload an executable file",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 686571666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I go to upload file page",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8566720916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 23,
+            "name": "I choose an executable file 'program.exe'",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1055120083
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "Accept terms of service",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40787125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I could not submit an executable file",
+            "match": {
+              "location": "features/stepDefinitions/fileUpload.steps.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2985999,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n    at Proxy.<anonymous> (/Users/hientrinh/Documents/GitHub/case-study-geocomply/node_modules/@playwright/test/lib/expect.js:129:37)\n    at UploadFilePageAssertions.toDisabledSubmitFileButton (/Users/hientrinh/Documents/GitHub/case-study-geocomply/pages/uploadFile.pom.ts:66:39)\n    at World.<anonymous> (/Users/hientrinh/Documents/GitHub/case-study-geocomply/features/stepDefinitions/fileUpload.steps.ts:24:5)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 108521958
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@foo",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 21
           }
         ],
         "type": "scenario"

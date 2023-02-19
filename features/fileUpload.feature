@@ -1,4 +1,3 @@
-@foo
 Feature: Upload file tests
   I want to upload file(s)
 
@@ -6,40 +5,25 @@ Feature: Upload file tests
     Given I go to upload file page
 
   @regression
-  Scenario: upload a single valid file and accept terms 
-    When I upload a file successfully
+  Scenario: users upload a single valid file
+    Given I choose a file 'campfire.jpg'
+    And Accept terms of service
+    When I submit a file
     Then The message should display
 
-  # @regression
-  # Scenario: upload a single valid file without accept terms
-  #   When I upload a file
-  #   Then unable upload should show
+  @regression
+  Scenario: without accepting terms, user upload a file
+    When I choose a file 'campfire.jpg'
+    And Do not accept terms of service
+    Then I could not submit a file
 
-  # @regression
-  # Scenario: upload a single valid file without accept terms
-  #   When I upload a file
-  #   Then unable upload should show
+  @regression
+  Scenario Outline: users upload an executable file
+    Given I choose an executable file <file>
+    And Accept terms of service
+    Then I could not submit an executable file
 
-  # @regression
-  # Scenario: upload a exectutable file and accept terms
-  #   When I upload a file
-  #   Then unable upload should show
-
-  # @regression
-  # Scenario: expect not able to set path by typing
-  #   When I upload a file
-  #   Then unable upload should show 
-
-  
-
-  # @regression
-  # Scenario Outline: much more complex stuff
-  #   Given a variable is set to <var>
-  #   When I increment this variable by <increment>
-  #   Then the variable should contain <result>
-
-  #   Examples: 
-  #     | var | increment | result |
-  #     | 100 |         5 |    105 |
-  #     |  99 |      1234 |   1333 |
-  #     |  12 |         5 |     17 |
+    Examples: 
+      | file             |
+      | 'executable.bat' |
+      | 'program.exe'    |

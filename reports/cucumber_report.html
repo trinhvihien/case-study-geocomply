@@ -279,8 +279,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">case-study-geocomply</div>
           <div class="label-container">
-            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 0</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 0</span>
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 1</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 3</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Sat Feb 18 2023 20:50:29 GMT+0700 (Indochina Time)</div>
+      <div class="generated-on">Sun Feb 19 2023 16:43:52 GMT+0700 (Indochina Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -323,7 +323,7 @@ pre {
               
               <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <div class=pull-right-lg>
-                    <strong> Test Environment: </strong>STAGING
+                    <strong> Test Environment: </strong>Production
                   </div>
               </div>
               
@@ -331,7 +331,7 @@ pre {
               
               <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <div class=pull-left>
-                    <strong> Browser: </strong>Chrome  54.0.2840.98
+                    <strong> Browser: </strong>Chronium based
                   </div>
               </div>
               
@@ -339,7 +339,7 @@ pre {
               
               <div class="clearfix metadata col-xs-12 col-sm-6 col-md-6 col-lg-6">
                   <div class=pull-right-lg>
-                    <strong> Platform: </strong>Windows 10
+                    <strong> Platform: </strong>Mac Ventura
                   </div>
               </div>
               
@@ -371,7 +371,7 @@ pre {
 <div class="row" xmlns="http://www.w3.org/1999/html">
 
 
-<div class="feature-passed">
+<div class="feature-failed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
@@ -382,15 +382,16 @@ pre {
                         
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeaturecase_study_geocomplyf804e4ba-eb91-4dd6-9d52-bf73677f82dc">
+                    <a data-toggle="collapse" href="#collapseFeaturecase_study_geocomply049f7ee4-6370-4da6-aaf6-187b2f3e1bb8">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Upload file tests
                         <span class="label-container">
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
+              <span class="label label-danger"
+                                                         title="3 Scenarios Failed">3</span>
               
-              
-              <span class="label label-info"
-                                                             title="1 Scenarios Undefined">1</span>
               
               
               
@@ -398,8 +399,10 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeaturecase_study_geocomplyf804e4ba-eb91-4dd6-9d52-bf73677f82dc" class="panel-collapse collapse">
+            <div id="collapseFeaturecase_study_geocomply049f7ee4-6370-4da6-aaf6-187b2f3e1bb8" class="panel-collapse collapse">
                 <div class="panel-body">
+                    
+                    <div class="description">  I want to upload file(s)</div>
                     
                     
                     
@@ -412,22 +415,21 @@ pre {
                                     
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenariocase_study_geocomply781e33af-1435-484d-81a3-6798c54b4a0c">
+                                <a data-toggle="collapse" href="#collapseScenariocase_study_geocomplya64929f5-ad09-4b11-bbd8-db8700cdef46">
                                     <div>
 
-                                        <div style="padding-right: 50px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
-                                            <b>Scenario:</b>upload a valid file
+                                            <b>Scenario:</b>users upload a single valid file
                                         </div>
                                         <div>
                             <span class="label-container">
+                              <span class="label label-success"
+                                                               title="5 Steps Passed">5</span>
                               
-                              <span class="label label-info"
-                                                                   title="2 Steps Undefined">2</span>
                               
-                              <span class="label label-warning"
-                                                                title="1 Steps Skipped">1</span>
+                              
                               
                               
                             </span>
@@ -437,7 +439,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenariocase_study_geocomply781e33af-1435-484d-81a3-6798c54b4a0c"
+                        <div id="collapseScenariocase_study_geocomplya64929f5-ad09-4b11-bbd8-db8700cdef46"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -450,17 +452,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Given </span>
-                          <span> I have a file to upload</span>
+                          <span> I go to upload file page</span>
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               6s 142ms
                               </span>
                             
                          
@@ -471,13 +473,6 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^I have a file to upload$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
-                                    
 
                                     
 
@@ -495,17 +490,93 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-warning" title="Skipped"><i
-                                            class="glyphicon glyphicon-minus"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> I choose a file &#39;campfire.jpg&#39;</span>
+                            
+                          
+                              <span class="step-duration">
+                               958ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Accept terms of service</span>
+                            
+                          
+                              <span class="step-duration">
+                               91ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">When </span>
-                          <span> I upload a file</span>
+                          <span> I submit a file</span>
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               257ms
                               </span>
                             
                          
@@ -533,17 +604,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> message should show</span>
+                          <span> The message should display</span>
                             
                           
                               <span class="step-duration">
-                               < 1ms
+                               6ms
                               </span>
                             
                          
@@ -554,13 +625,759 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^message should show$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @regression</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocase_study_geocomplyb1ca853e-8340-4a86-9183-be66f5b72660">
+                                    <div>
+
+                                        <div style="padding-right: 50px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario:</b>without accepting terms, user upload a file
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocase_study_geocomplyb1ca853e-8340-4a86-9183-be66f5b72660"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> I go to upload file page</span>
+                            
+                          
+                              <span class="step-duration">
+                               5s 393ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">When </span>
+                          <span> I choose a file &#39;campfire.jpg&#39;</span>
+                            
+                          
+                              <span class="step-duration">
+                               997ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Do not accept terms of service</span>
+                            
+                          
+                              <span class="step-duration">
+                               4ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> I could not submit a file</span>
+                            
+                          
+                              <span class="step-duration">
+                               4ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_14"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_14"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_14">
+                                            <br> Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeFalsy[2m()[22m
+
+Received: [31mtrue[39m
+    at Proxy.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/node_modules/@playwright/test/lib/expect.js:129:37)
+    at UploadFilePageAssertions.toDisabledSubmitFileButton (/Users/hientrinh/Documents/GitHub/case-study-geocomply/pages/uploadFile.pom.ts:66:39)
+    at World.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/features/stepDefinitions/fileUpload.steps.ts:24:5)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_14" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeFalsy[2m()[22m
+
+Received: [31mtrue[39m
+    at Proxy.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/node_modules/@playwright/test/lib/expect.js:129:37)
+    at UploadFilePageAssertions.toDisabledSubmitFileButton (/Users/hientrinh/Documents/GitHub/case-study-geocomply/pages/uploadFile.pom.ts:66:39)
+    at World.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/features/stepDefinitions/fileUpload.steps.ts:24:5)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @regression</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocase_study_geocomply3d1386ea-ea3e-4eb6-8299-56a0a9d53cd0">
+                                    <div>
+
+                                        <div style="padding-right: 50px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario Outline:</b>users upload an executable file
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocase_study_geocomply3d1386ea-ea3e-4eb6-8299-56a0a9d53cd0"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> I go to upload file page</span>
+                            
+                          
+                              <span class="step-duration">
+                               7s 923ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> I choose an executable file &#39;executable.bat&#39;</span>
+                            
+                          
+                              <span class="step-duration">
+                               971ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Accept terms of service</span>
+                            
+                          
+                              <span class="step-duration">
+                               41ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> I could not submit an executable file</span>
+                            
+                          
+                              <span class="step-duration">
+                               2ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_24"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_24"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_24">
+                                            <br> Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeFalsy[2m()[22m
+
+Received: [31mtrue[39m
+    at Proxy.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/node_modules/@playwright/test/lib/expect.js:129:37)
+    at UploadFilePageAssertions.toDisabledSubmitFileButton (/Users/hientrinh/Documents/GitHub/case-study-geocomply/pages/uploadFile.pom.ts:66:39)
+    at World.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/features/stepDefinitions/fileUpload.steps.ts:24:5)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_24" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeFalsy[2m()[22m
+
+Received: [31mtrue[39m
+    at Proxy.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/node_modules/@playwright/test/lib/expect.js:129:37)
+    at UploadFilePageAssertions.toDisabledSubmitFileButton (/Users/hientrinh/Documents/GitHub/case-study-geocomply/pages/uploadFile.pom.ts:66:39)
+    at World.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/features/stepDefinitions/fileUpload.steps.ts:24:5)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                
+                                
+                                <div class="tags"> <span class="tag"> @regression</span>
+                                    
+                                </div>
+                                
+                                <a data-toggle="collapse" href="#collapseScenariocase_study_geocomplyeb2c1d0c-42f9-40c1-aaa7-6022f01373ba">
+                                    <div>
+
+                                        <div style="padding-right: 50px">
+                                            <i class="glyphicon glyphicon-chevron-right"></i>
+                                            <i class="glyphicon glyphicon-chevron-down"></i>
+                                            <b>Scenario Outline:</b>users upload an executable file
+                                        </div>
+                                        <div>
+                            <span class="label-container">
+                              <span class="label label-success"
+                                                               title="3 Steps Passed">3</span>
+                              
+                              
+                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
+                              
+                            </span>
+                                        </div>
+                                    </div>
+                                    <div><small><i></i></small></div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseScenariocase_study_geocomplyeb2c1d0c-42f9-40c1-aaa7-6022f01373ba"
+                             class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div></div>
+                                
+                                
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> I go to upload file page</span>
+                            
+                          
+                              <span class="step-duration">
+                               8s 566ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Given </span>
+                          <span> I choose an executable file &#39;program.exe&#39;</span>
+                            
+                          
+                              <span class="step-duration">
+                               1s 55ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">And </span>
+                          <span> Accept terms of service</span>
+                            
+                          
+                              <span class="step-duration">
+                               40ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
+                                
+                                
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">Then </span>
+                          <span> I could not submit an executable file</span>
+                            
+                          
+                              <span class="step-duration">
+                               2ms
+                              </span>
+                            
+                         
+                            
+                          
+                          <!-- Adding data table data-->
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_34"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_34"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_34">
+                                            <br> Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeFalsy[2m()[22m
+
+Received: [31mtrue[39m
+    at Proxy.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/node_modules/@playwright/test/lib/expect.js:129:37)
+    at UploadFilePageAssertions.toDisabledSubmitFileButton (/Users/hientrinh/Documents/GitHub/case-study-geocomply/pages/uploadFile.pom.ts:66:39)
+    at World.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/features/stepDefinitions/fileUpload.steps.ts:24:5)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_34" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeFalsy[2m()[22m
+
+Received: [31mtrue[39m
+    at Proxy.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/node_modules/@playwright/test/lib/expect.js:129:37)
+    at UploadFilePageAssertions.toDisabledSubmitFileButton (/Users/hientrinh/Documents/GitHub/case-study-geocomply/pages/uploadFile.pom.ts:66:39)
+    at World.(anonymous) (/Users/hientrinh/Documents/GitHub/case-study-geocomply/features/stepDefinitions/fileUpload.steps.ts:24:5)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -612,9 +1429,9 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 0,
+                                                            "failed" : 1,
                                                             "passed" : 0,
-                                                            "notdefined" : 1,
+                                                            "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
                                                             "ambiguous" : 0
@@ -622,9 +1439,9 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 0,
-                                                            "passed" : 0,
-                                                            "notdefined" : 1,
+                                                            "failed" : 3,
+                                                            "passed" : 1,
+                                                            "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
                                                             "ambiguous" : 0

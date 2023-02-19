@@ -37,7 +37,17 @@ export class UploadFilePage extends BasePage {
         }
         await this.fileChooser.click();
         await this.fileChooser.setInputFiles(filePath);
+    }
+
+    async acceptTerms() {
         await this.acceptTermsCheckbox.check();
+    }
+
+    async rejectTerms() {
+        await this.acceptTermsCheckbox.uncheck();
+    }
+
+    async submitFile() {
         await this.submitFileButton.click();
     }
 }
@@ -51,5 +61,10 @@ class UploadFilePageAssertions {
     async toDisplayUploadSuccessfully() {
         const msg = await this.uploadPage.uploadMessage.textContent();
         expect(msg).toBe('1 file has been successfully uploaded.');
+    }
+
+    async toDisabledSubmitFileButton() {
+        const isEnabled = await this.uploadPage.submitFileButton.isEnabled({ timeout: 2000 });
+        expect(isEnabled).toBeFalsy();
     }
 }
