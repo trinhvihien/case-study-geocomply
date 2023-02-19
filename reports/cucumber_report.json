@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 755024667
+              "duration": 1056114084
             }
           },
           {
@@ -23,11 +23,11 @@
             "line": 6,
             "name": "I go to upload file page",
             "match": {
-              "location": "features/stepDefinitions/fileUpload.steps.ts:6"
+              "location": "features/stepDefinitions/fileUpload.steps.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 6763332999
+              "duration": 6078083750
             }
           },
           {
@@ -36,11 +36,11 @@
             "line": 10,
             "name": "I upload a file successfully",
             "match": {
-              "location": "features/stepDefinitions/fileUpload.steps.ts:10"
+              "location": "features/stepDefinitions/fileUpload.steps.ts:8"
             },
             "result": {
               "status": "passed",
-              "duration": 114166
+              "duration": 1009270666
             }
           },
           {
@@ -49,11 +49,11 @@
             "line": 11,
             "name": "The message should display",
             "match": {
-              "location": "features/stepDefinitions/fileUpload.steps.ts:13"
+              "location": "features/stepDefinitions/fileUpload.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 58624
+              "duration": 4642624
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 75120665
+              "duration": 95918250
             }
           }
         ],

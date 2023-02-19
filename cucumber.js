@@ -1,8 +1,6 @@
 let options = [
     '--require-module ts-node/register',
     '--require features/stepDefinitions/*.ts',
-    '--require hooks/commonHooks.ts',
-    '--require pages/*.ts',
     '-f json:reports/cucumber_report.json',
     '--publish-quiet',
 ].join(' ');

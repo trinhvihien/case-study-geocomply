@@ -4,7 +4,6 @@ import { normalize } from 'upath';
 import os from 'os';
 import fs from 'fs';
 
-
 export class UploadFilePage extends BasePage {
     readonly assert: UploadFilePageAssertions;
     readonly fileChooser: Locator;
