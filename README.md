@@ -6,6 +6,7 @@
 - Page Object are using for easy maintainance code.
 - [Structure](project.structure.md)
 - [Bugs](#file-upload-bugs)
+- [Test Plan](./test-plan/CaseStudyTestPlan.html)
 ## Prerequisite
 - install Node js v19
 - install VS code
